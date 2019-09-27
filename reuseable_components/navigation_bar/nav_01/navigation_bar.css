@@ -131,7 +131,7 @@ a{
 }
 
 .nav-list-link{
-    display: block;
+    /*display: block;*/
     font-size: 20px;
     font-weight: 400;
     /*color: #324851;*/
