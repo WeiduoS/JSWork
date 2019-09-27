@@ -137,10 +137,10 @@ a{
     /*color: #324851;*/
     color:#063852;
     margin: 1rem 1rem;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    /*-webkit-transition: all .5s ease-in-out;*/
+    /*-moz-transition: all .5s ease-in-out;*/
+    /*-o-transition: all .5s ease-in-out;*/
+    /*transition: all .5s ease-in-out;*/
 }
 
 a.nav-list-link.active{
