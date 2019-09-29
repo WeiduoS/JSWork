@@ -2,8 +2,10 @@ body {
     margin: 0;
     padding: 0;
     /*background-color: rgba(0, 0, 0, 0.7);*/
-    background-color: #FFF8DC;
+    /*background-color: #FFF8DC;*/
+    background-color: #FDF5E6;
 }
+
 
 .nav-container{
     display: flex;
