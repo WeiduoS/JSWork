@@ -22,7 +22,8 @@ header {
   font-size: 30px;
   color: #edf0f1;
   text-decoration: none;
-  font-family: Montserrat, minion-pro, sans-serif;
+  font-family: 'Montserrat', minion-pro, sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
   /*font-family: 'Pinyon Script', cursive;*/
   transform: translateX(-100rem);
   animation: slideIn 0.5s forwards;
