@@ -23,7 +23,7 @@ header {
   color: #edf0f1;
   text-decoration: none;
   /*letter-spacing: 10px;*/
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Pinyon Script', sans-serif;
   /*font-family: 'Pinyon Script', cursive;*/
   transform: translateX(-100rem);
   animation: slideIn 0.5s forwards;
