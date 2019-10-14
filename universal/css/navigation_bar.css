@@ -104,6 +104,7 @@ a#nav-toggle-button {
   align-items: center;
   list-style: none;
   flex-basis: 100%;
+  padding: 0;
 }
 
 .collapse {
@@ -196,7 +197,7 @@ a.nav-list-link:hover::after {
   }
   .nav-list-link {
     display: inline-block;
-    margin: 2rem auto;
+    margin: 1rem auto;
     font-weight: 500;
     font-size: 30px;
   }
@@ -215,7 +216,7 @@ a.nav-list-link:hover::after {
   }
   .nav-list-link {
     display: inline-block;
-    margin: 2rem auto;
+    margin: 1rem auto;
     font-weight: 500;
     font-size: 30px;
   }
@@ -234,7 +235,7 @@ a.nav-list-link:hover::after {
   }
   .nav-list-link {
     display: inline-block;
-    margin: 2rem auto;
+    margin: 1rem auto;
     font-weight: 500;
     font-size: 30px;
   }
