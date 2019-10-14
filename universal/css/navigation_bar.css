@@ -191,6 +191,15 @@ a.nav-list-link:hover::after {
   .navigation {
     flex-wrap: wrap;
   }
+  .nav-list {
+    height: 100vh;
+  }
+  .nav-list-link {
+    display: inline-block;
+    margin: 2rem auto;
+    font-weight: 500;
+    font-size: 30px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
