@@ -48,7 +48,7 @@ a#nav-toggle-button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 2rem;
+  margin-right: 0;
 }
 #nav-toggle-button span {
   cursor: pointer;
