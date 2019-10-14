@@ -1,5 +1,5 @@
-@import url(//fonts.googleapis.com/css?family=Montserrat:400i&display=swap);
-@import url(//fonts.googleapis.com/css?family=Pinyon+Script&display=swap);
+/*@import url(//fonts.googleapis.com/css?family=Pinyon+Script&display=swap);*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i|Open+Sans:400i&display=swap');
 header {
   overflow-x: hidden;
   padding: 0;
@@ -22,8 +22,9 @@ header {
   font-size: 30px;
   color: #edf0f1;
   text-decoration: none;
-  font-family: 'Montserrat', minion-pro, sans-serif;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
   /*font-family: 'Montserrat', sans-serif;*/
+  font-style: italic;
   /*font-family: 'Pinyon Script', cursive;*/
   transform: translateX(-100rem);
   animation: slideIn 0.5s forwards;
