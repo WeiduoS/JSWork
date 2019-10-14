@@ -1,5 +1,4 @@
-/*@import url(//fonts.googleapis.com/css?family=Pinyon+Script&display=swap);*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i|Open+Sans:400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i|Open+Sans:400,400i&display=swap');
 header {
   overflow-x: hidden;
   padding: 0;
@@ -15,17 +14,15 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /*background-color: transparent;*/
 }
 
 .nav-brand {
   font-size: 30px;
   color: #edf0f1;
   text-decoration: none;
+  font-weight: 400;
   font-family: 'Montserrat', 'Open Sans', sans-serif;
-  /*font-family: 'Montserrat', sans-serif;*/
   font-style: italic;
-  /*font-family: 'Pinyon Script', cursive;*/
   transform: translateX(-100rem);
   animation: slideIn 0.5s forwards;
 }
@@ -140,11 +137,12 @@ ul.nav-list li.nav-list-item:nth-child(4) {
 .nav-list-link {
   position: relative;
   margin: 0 3rem;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   padding: 0.5rem 0;
   letter-spacing: 2px;
-  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-style: italic;
   color: #edf0f1;
   cursor: pointer;
 }
@@ -202,7 +200,6 @@ a.nav-list-link:hover::after {
   .nav-list-link {
     display: inline-block;
     margin: 1rem auto;
-    font-weight: 500;
     font-size: 30px;
   }
 }
@@ -221,7 +218,6 @@ a.nav-list-link:hover::after {
   .nav-list-link {
     display: inline-block;
     margin: 1rem auto;
-    font-weight: 500;
     font-size: 30px;
   }
 }
@@ -240,7 +236,6 @@ a.nav-list-link:hover::after {
   .nav-list-link {
     display: inline-block;
     margin: 1rem auto;
-    font-weight: 500;
     font-size: 30px;
   }
 }
