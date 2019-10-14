@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400i&display=swap");
+/*@import url("https://fonts.googleapis.com/css?family=Montserrat:400i&display=swap");*/
 header {
   overflow-x: hidden;
   padding: 0;
@@ -21,6 +21,7 @@ header {
   font-size: 30px;
   color: #edf0f1;
   text-decoration: none;
+  letter-spacing: 10px;
   /*font-family: "Montserrat", sans-serif;*/
   font-family: 'Pinyon Script', cursive;
   transform: translateX(-100rem);
@@ -141,7 +142,7 @@ ul.nav-list li.nav-list-item:nth-child(4) {
   font-size: 20px;
   padding: 0.5rem 0;
   letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
   color: #edf0f1;
   cursor: pointer;
 }
