@@ -1,5 +1,5 @@
 .chicken {
-    width: 200px;
+    width: 150px;
     text-align: center;
     position: relative;
 }
@@ -7,67 +7,76 @@
 .chicken-body {
     width: 0;
     height: 0;
-    border-left:100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 170px solid #b67b69;
+    border-left:75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 150px solid #b2bec3;
 }
 
-.chicken-body:after{
-    content: '';
-    /*background-color: #7f605d;*/
-    width:70px;
-    height:70px;
-    border-radius: 50%;
-    display: inline-block;
-    position:absolute;
-    left: -13px;
-    margin-top: 79px;
-    background: linear-gradient(135deg,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(127,96,93,1) 51%,rgba(127,96,93,1) 100%);
-}
 .chicken-body:before{
     content: '';
-    width:70px;
-    height:70px;
+    /*background-color: #7f605d;*/
+    width:50px;
+    height:50px;
     border-radius: 50%;
     display: inline-block;
     position:absolute;
-    right: -13px;
+    left: -12px;
     margin-top: 79px;
-    background: linear-gradient(45deg,  rgba(127,96,93,1) 0%,rgba(127,96,93,1) 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(136deg,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(99, 110, 114,1.0) 51%,rgba(99, 110, 114,1.0) 100%);
+}
+.chicken-body:after{
+    content: '';
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: inline-block;
+    position:absolute;
+    right: -12px;
+    margin-top: 79px;
+    background: linear-gradient(44deg,  rgba(99, 110, 114,1.0) 0%,rgba(99, 110, 114,1.0) 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 100%);
 }
 
 .chicken-head {
     position: relative;
-    top:135px;
+    top:105px;
 }
 
 /*eyes*/
 .chicken-eye {
-    width:35px;
-    height: 35px;
+    width:30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #000;
-    border: 20px solid #fff;
+    border: 13px solid #fff;
     display: inline-block;
     position: relative;
 }
 
 .left-eye {
-    left: 12px;
+    left: 8px;
 }
 .right-eye {
-    right: 12px;
+    right: 8px;
 }
-
+.chicken-head:before{
+    content: '';
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: #d63031;
+    position: relative;
+    display: block;
+    left: calc(50% - 10px);
+}
 .chicken-head:after{
     content: '';
     width: 0;
     height: 0;
-    border-left:20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 40px solid #dccc6a;
+    border-left:15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #dccc6a;
     display: block;
     position: relative;
-    left: calc(50% - 20px);
-    top: -20px;
+    left: calc(50% - 15px);
+    top: -15px;
 }
