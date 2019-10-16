@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #063852;
+    font-family: 'Montserrat', sans-serif;
+    color: #c3c1c1;
+    font-size: 15px;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    align-content: space-between;
+}
+.organization-info {
+    margin: 5rem 2rem 5rem 3rem;
+    width: 25%;
+}
+
+.organization-info-name {
+    font-size: 18px;
+}
+.organization-info-social .social-icon {
+    display: inline-block;
+    margin: 1rem 1rem 1rem 0;
+}
+.organization-info-social .social-icon i{
+    color: #c3c1c1;
+}
+.organization-info-description a{
+    text-decoration: none;
+    color: yellowgreen;
+    transition: all 0.5s ease-in-out;
+}
+.organization-info-description a:hover{
+    color:crimson;
+}
+.organization-contract{
+    margin: 5rem 2rem;
+    width: 25%;
+}
+
+.organization-contract-title{
+    font-size: 18px;
+}
+
+.organization-social{
+    margin: 5rem 1rem;
+    width: 25%;
+    max-height: 350px;
+}
+
+.organization-social:last-child {
+    margin-right: 3rem;
+}
+
+.organization-copyright{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items:center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.organization-copyright a {
+    text-decoration: none;
+    color:#c3c1c1;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .footer-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .organization-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 3rem auto;
+    }
+    .organization-contract{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 3rem auto;
+    }
+    .organization-social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 3rem auto;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .footer-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .organization-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 3rem auto;
+    }
+    .organization-contract{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 3rem auto;
+    }
+    .organization-social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 3rem auto;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .footer-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .organization-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 3rem auto;
+    }
+    .organization-contract{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 3rem auto;
+    }
+    .organization-social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 3rem auto;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
