@@ -24,6 +24,8 @@ window.onload = function () {
             cells[i].innerText = "";
             cells[i].addEventListener("click", turnClick, false);
             if(cells[i].classList.contains("gameOver")) cells[i].classList.remove("gameOver");
+            if(cells[i].classList.contains("ai")) cells[i].classList.remove("ai");
+            if(cells[i].classList.contains("human")) cells[i].classList.remove("human");
         }
         document.getElementsByClassName("overCanvas")[0].classList.remove("overCanvasCollapse");
         document.querySelector(".overCanvas .text").innerText = "";
@@ -33,17 +35,15 @@ window.onload = function () {
     function turnClick() {
         if(typeof checkBoard[this.id] == 'number') {
             cellClick(this.id, human);
-            if(!checkTie() && !checkWin(checkBoard, ai)) cellClick(bestSpot(), ai);
+            if(!checkTie() && !checkWin(checkBoard, ai)) setTimeout(function(){cellClick(bestSpot(), ai)}, 250);
         }
     }
 
     function cellClick(squareId, player) {
-        console.log("squareId" + squareId + ", player: " + player);
         checkBoard[squareId] = player;
         cells[squareId].innerText = player;
-        cells[squareId].classList.add("addText");
+        cells[squareId].classList.add((player === ai ? "ai" : "human"));
         let gameWinner = checkWin(checkBoard, player);
-        console.log("gameOver: " + gameWinner);
         if(gameWinner != null) gameOver(gameWinner);
     }
 
@@ -60,7 +60,6 @@ window.onload = function () {
     }
 
     function gameOver(gameWon) {
-        console.log("gameOver");
         for(let i = 0; i < winCombos[gameWon.index].length; i++) {
             let elem = document.getElementById(winCombos[gameWon.index][i]);
             if(!elem.classList.contains("gameOver")) setTimeout(function() { elem.classList.add("gameOver")}, 200);
@@ -69,7 +68,6 @@ window.onload = function () {
     }
 
     function declareWinner(text) {
-        console.log("declarer: " + text);
         document.getElementsByClassName("overCanvas")[0].classList.add("overCanvasCollapse");
         document.querySelector(".overCanvas .text").innerText = text;
     }
@@ -91,7 +89,6 @@ window.onload = function () {
 
     function bestSpot() {
         return miniMax(checkBoard, ai).index;
-        // return emptyCells()[0];
     }
 
     function miniMax(newboard, player) {

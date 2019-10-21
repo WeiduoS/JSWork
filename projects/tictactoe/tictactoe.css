@@ -38,9 +38,13 @@ body{
     /*transition: opacity .5s cubic-bezier(0.4,0.0,1,1),transform .5s cubic-bezier(0.4,0.0,1,1),visibility .5s step-end;*/
 }
 
-.addText {
+.human {
     /*color:#545454;*/
     color: rgba(84, 84, 84, 1);
+}
+
+.ai {
+    color: rgba(242, 235, 211, 1)
 }
 
 
@@ -102,10 +106,10 @@ body{
 }
 
 .overCanvasCollapse {
-    background-color: rgba(52, 152, 219, 0.5);
-    visibility: visible;
     width: 350px;
     height: 350px;
+    background-color: rgba(52, 152, 219, 0.5);
+    visibility: visible;
 }
 
 
