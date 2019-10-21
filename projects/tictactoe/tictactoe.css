@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap');
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#tictactoe {
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem auto;
+    font-family: Roboto sans-serif;
+}
+
+#tictactoe table{
+    border-radius: 15px;
+    padding: 2rem;
+    border-spacing: 0;
+    border-collapse: separate;
+    background-color: #14bdac;
+    color: rgba(149, 165, 166, 0.3);
+    /*transition: opacity .5s cubic-bezier(0.4,0.0,1,1),transform .5s cubic-bezier(0.4,0.0,1,1),visibility .5s step-end;*/
+}
+#tictactoe .cell {
+    border:  4px solid #0da192;
+    height: 90px;
+    width: 90px;
+    padding: 0;
+    text-align: center;
+    font-size: 70px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    opacity: 1;
+    transition: all 0.5s cubic-bezier(0.4,0.0,1,1);
+    /*transition: opacity .5s cubic-bezier(0.4,0.0,1,1),transform .5s cubic-bezier(0.4,0.0,1,1),visibility .5s step-end;*/
+}
+
+.addText {
+    /*color:#545454;*/
+    color: rgba(84, 84, 84, 1);
+}
+
+
+
+#tictactoe tr:first-child .cell {
+    border-top: none;
+}
+
+#tictactoe tr:last-child .cell {
+    border-bottom: none;
+}
+
+#tictactoe tr td:first-child {
+    border-left: none;
+}
+
+#tictactoe tr td:last-child {
+    border-right: none;
+}
+
+.gameOver {
+    background-color: #0da192;
+}
+
+.overCanvas {
+    /*display: none;*/
+    /*display: inline-block;*/
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    border-radius: 15px;
+    background-color: transparent;
+    position: absolute;
+    color: #ffffff;
+    /*text-align: center;*/
+    font-size: 2em;
+    /*transition: all 0.6s cubic-bezier(0.4,0.0,1,1);*/
+    transition: all 0.6s ease-in-out;
+}
+
+.overCanvas .button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #2f3542;
+    font-style: italic;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.overCanvas .button:hover {
+    color: #2f3542;
+    background-color: #ffffff;
+}
+
+.overCanvasCollapse {
+    background-color: rgba(52, 152, 219, 0.5);
+    visibility: visible;
+    width: 350px;
+    height: 350px;
+}
+
+
