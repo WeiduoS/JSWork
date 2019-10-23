@@ -2,6 +2,8 @@
     width: 150px;
     text-align: center;
     position: relative;
+    top:-50px;
+    z-index: 5;
 }
 
 .chicken-body {
@@ -69,8 +71,8 @@
 }
 
 .chicken-head {
-    position: relative;
     top:105px;
+    position: relative;
 }
 
 /*eyes*/
