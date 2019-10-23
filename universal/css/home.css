@@ -42,6 +42,7 @@ body {
 
 .theatre-body .title {
     /*color: #fffbf1;*/
+    /*position: relative;*/
     color: #FDFFFC;
     font-size: 70px;
     font-weight: 400;
@@ -63,8 +64,9 @@ body {
     padding: .9em .4em;
     position: absolute;
     /*left: 58%;*/
-    left: calc(59% - 1rem);
-    width: 40%;
+    left: calc(50% + 1rem + 75px);
+    /*width: 40%;*/
+    width: 500px;
     /*width: 100%;*/
     top: 255px;
     border: 15px solid red;
@@ -97,22 +99,30 @@ body {
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     .theatre-body .title {
-        display: none;
+        /*display: none;*/
+        font-size: 50px;
+    }
+    .theatre-body .title:before,
+    .theatre-body .title:after{
+        left: calc(50% + 1rem + 55px);
+        width: 200px;
+        height: 100px;
+        top: 270px;
     }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .theatre-body .title {
-        display: none;
-    }
+    /*.theatre-body .title {*/
+    /*    display: none;*/
+    /*}*/
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .theatre-body .title {
-        display: none;
-    }
+    /*.theatre-body .title {*/
+    /*    display: none;*/
+    /*}*/
 }
 
 /* Large devices (desktops, 992px and up) */
