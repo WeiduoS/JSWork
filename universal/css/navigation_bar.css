@@ -198,6 +198,7 @@ a.nav-list-link:hover::after {
   }
   .navigation {
     flex-wrap: wrap;
+    margin: 1rem auto;
   }
   .nav-list {
     height: 100vh;
@@ -216,6 +217,7 @@ a.nav-list-link:hover::after {
   }
   .navigation {
     flex-wrap: wrap;
+    margin: 1rem auto;
   }
   .nav-list {
     height: 100vh;
